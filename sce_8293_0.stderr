@@ -1,0 +1,113 @@
+Warning in <TClassTable::Add>: class TFileMerger already in TClassTable
+Warning in <TClassTable::Add>: class TDirectoryFile already in TClassTable
+Warning in <TClassTable::Add>: class TFile already in TClassTable
+Warning in <TClassTable::Add>: class TMemFile already in TClassTable
+Warning in <TClassTable::Add>: class ROOT::Experimental::TBufferMerger already in TClassTable
+Warning in <TClassTable::Add>: class ROOT::Experimental::TBufferMergerFile already in TClassTable
+Warning in <TClassTable::Add>: class TArchiveFile already in TClassTable
+Warning in <TClassTable::Add>: class TArchiveMember already in TClassTable
+Warning in <TClassTable::Add>: class TBufferIO already in TClassTable
+Warning in <TClassTable::Add>: class TBufferFile already in TClassTable
+Warning in <TClassTable::Add>: class TBufferText already in TClassTable
+Warning in <TClassTable::Add>: class TBufferJSON already in TClassTable
+Warning in <TClassTable::Add>: class TGenCollectionProxy already in TClassTable
+Warning in <TClassTable::Add>: class TGenCollectionProxy::Value already in TClassTable
+Warning in <TClassTable::Add>: class TGenCollectionProxy::Method already in TClassTable
+Warning in <TClassTable::Add>: class TCollectionProxyFactory already in TClassTable
+Warning in <TClassTable::Add>: class TCollectionStreamer already in TClassTable
+Warning in <TClassTable::Add>: class TCollectionClassStreamer already in TClassTable
+Warning in <TClassTable::Add>: class TCollectionMemberStreamer already in TClassTable
+Warning in <TClassTable::Add>: class TEmulatedCollectionProxy already in TClassTable
+Warning in <TClassTable::Add>: class TEmulatedMapProxy already in TClassTable
+Warning in <TClassTable::Add>: class TFileCacheRead already in TClassTable
+Warning in <TClassTable::Add>: class TFree already in TClassTable
+Warning in <TClassTable::Add>: class TFileCacheWrite already in TClassTable
+Warning in <TClassTable::Add>: class TFPBlock already in TClassTable
+Warning in <TClassTable::Add>: class TFilePrefetch already in TClassTable
+Warning in <TClassTable::Add>: class TKey already in TClassTable
+Warning in <TClassTable::Add>: class TKeyMapFile already in TClassTable
+Warning in <TClassTable::Add>: class TLockFile already in TClassTable
+Warning in <TClassTable::Add>: class TMapFile already in TClassTable
+Warning in <TClassTable::Add>: class TMapRec already in TClassTable
+Warning in <TClassTable::Add>: class TStreamerInfo already in TClassTable
+Warning in <TClassTable::Add>: class TVirtualArray already in TClassTable
+Warning in <TClassTable::Add>: class TStreamerInfoActions::TConfiguration already in TClassTable
+Warning in <TClassTable::Add>: class TStreamerInfoActions::TConfiguredAction already in TClassTable
+Warning in <TClassTable::Add>: class TStreamerInfoActions::TActionSequence already in TClassTable
+Warning in <TClassTable::Add>: class TVirtualObject already in TClassTable
+Warning in <TClassTable::Add>: class TZIPFile already in TClassTable
+Warning in <TClassTable::Add>: class TZIPMember already in TClassTable
+<built-in>:9:9: warning: '__CLING__GNUC__' macro redefined [-Wmacro-redefined]
+#define __CLING__GNUC__ 7
+        ^
+<built-in>:395:9: note: previous definition is here
+#define __CLING__GNUC__ 8
+        ^
+<built-in>:10:9: warning: '__CLING__GNUC_MINOR__' macro redefined [-Wmacro-redefined]
+#define __CLING__GNUC_MINOR__ 3
+        ^
+<built-in>:396:9: note: previous definition is here
+#define __CLING__GNUC_MINOR__ 2
+        ^
+Warning in cling::IncrementalParser::CheckABICompatibility():
+  Possible C++ standard library mismatch, compiled with __GLIBCXX__ '20180125'
+  Extraction of runtime standard library version was: '20180726'
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x00002b5ad09584fc in waitpid () from /lib64/libc.so.6
+#1  0x00002b5ad08d5f62 in do_system () from /lib64/libc.so.6
+#2  0x00002b5abdf7bd03 in TUnixSystem::StackTrace() () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#3  0x00002b5abdf7e5d4 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#4  <signal handler called>
+#5  0x00002b5ad6d8b69b in TClingTypedefInfo::Init(char const*) () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.16.00-42022/x86_64-centos7-gcc7-opt/lib/libCling.so
+#6  0x00002b5ad6d15a2d in TCling::TypedefInfo_Init(TypedefInfo_t*, char const*) const () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.16.00-42022/x86_64-centos7-gcc7-opt/lib/libCling.so
+#7  0x00002b5abde78040 in TListOfTypes::FindType(char const*) const () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#8  0x00002b5abdf2bda4 in TClass::GetClass(char const*, bool, bool) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#9  0x00002b5abdf2dcaa in TClass::AddRule(char const*) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#10 0x00002b5abdf2ded7 in (anonymous namespace)::ReadRulesContent(_IO_FILE*) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#11 0x00002b5abdf2e227 in TClass::ReadRules() () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#12 0x00002b5abde409a0 in TROOT::InitInterpreter() () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#13 0x00002b5abde40d5f in ROOT::Internal::GetROOT2() () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#14 0x00002b5abde6b0ce in TEnv::Getvalue(char const*) const () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#15 0x00002b5abde6b9a9 in TEnv::GetValue(char const*, char const*) const () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#16 0x00002b5abdec682b in TUrl::GetSpecialProtocols() () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#17 0x00002b5abdec6e0a in TUrl::SetUrl(char const*, bool) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#18 0x00002b5abdec7464 in TUrl::TUrl(char const*, bool) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#19 0x00002b5abe6249d5 in TFile::TFile(char const*, char const*, char const*, int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libRIO.so
+#20 0x000000000041468c in main ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum http://root.cern.ch/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at http://root.cern.ch/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#5  0x00002b5ad6d8b69b in TClingTypedefInfo::Init(char const*) () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.16.00-42022/x86_64-centos7-gcc7-opt/lib/libCling.so
+#6  0x00002b5ad6d15a2d in TCling::TypedefInfo_Init(TypedefInfo_t*, char const*) const () from /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.16.00-42022/x86_64-centos7-gcc7-opt/lib/libCling.so
+#7  0x00002b5abde78040 in TListOfTypes::FindType(char const*) const () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#8  0x00002b5abdf2bda4 in TClass::GetClass(char const*, bool, bool) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#9  0x00002b5abdf2dcaa in TClass::AddRule(char const*) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#10 0x00002b5abdf2ded7 in (anonymous namespace)::ReadRulesContent(_IO_FILE*) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#11 0x00002b5abdf2e227 in TClass::ReadRules() () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#12 0x00002b5abde409a0 in TROOT::InitInterpreter() () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#13 0x00002b5abde40d5f in ROOT::Internal::GetROOT2() () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#14 0x00002b5abde6b0ce in TEnv::Getvalue(char const*) const () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#15 0x00002b5abde6b9a9 in TEnv::GetValue(char const*, char const*) const () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#16 0x00002b5abdec682b in TUrl::GetSpecialProtocols() () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#17 0x00002b5abdec6e0a in TUrl::SetUrl(char const*, bool) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#18 0x00002b5abdec7464 in TUrl::TUrl(char const*, bool) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libCore.so
+#19 0x00002b5abe6249d5 in TFile::TFile(char const*, char const*, char const*, int) () from /cvmfs/sft.cern.ch/lcg/views/LCG_96/x86_64-centos7-gcc8-opt/lib/libRIO.so
+#20 0x000000000041468c in main ()
+===========================================================
+
+
